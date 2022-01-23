@@ -1,8 +1,14 @@
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from 'remix';
+import { Links, LinksFunction, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from 'remix';
 import type { MetaFunction } from 'remix';
+
+import tailwind from './styles/tailwind.generated.css';
 
 export const meta: MetaFunction = () => {
   return { title: 'Alexander Baron' };
+};
+
+export const links: LinksFunction = () => {
+  return [{ href: tailwind, rel: 'stylesheet' }];
 };
 
 export default function App() {
