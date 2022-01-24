@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           # Note: tags has to be all lower-case
-          tags: ghcr.io/schwfelhexa/alexanders-site:latest
+          tags: ghcr.io/schwefelhexa/alexanders-site:latest
           # build on feature branches, push only on main branch
           push: true
 
