@@ -19,5 +19,5 @@ h1 {
 }
 
 a {
-  @apply font-medium text-blue-600 underline;
+  @apply hover:text-blue-700 font-medium text-blue-600 underline;
 }
