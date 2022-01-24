@@ -30,10 +30,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           # Note: tags has to be all lower-case
-          tags: |
-            ghcr.io/schwfelhexa/alexanders-site:latest
+          tags: ghcr.io/schwfelhexa/alexanders-site:latest
           # build on feature branches, push only on main branch
-          push: ${{ github.ref == 'refs/heads/main' }}
+          push: true
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
