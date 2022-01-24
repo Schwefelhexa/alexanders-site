@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-lg text-gray-800;
+}
+
+h1 {
+  @apply lg:text-8xl font-serif text-6xl font-medium text-gray-800;
+}
+
+a {
+  @apply font-medium text-blue-600 underline;
+}

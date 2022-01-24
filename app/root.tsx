@@ -1,6 +1,7 @@
 import { Links, LinksFunction, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from 'remix';
 import type { MetaFunction } from 'remix';
 
+import Layout from './components/Layout';
 import tailwind from './styles/tailwind.generated.css';
 
 export const meta: MetaFunction = () => {
@@ -29,7 +30,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}

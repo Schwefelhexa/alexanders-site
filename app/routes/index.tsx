@@ -1,7 +1,11 @@
 export default function Index() {
   return (
-    <h1 className="text-4xl font-bold text-gray-800">
-      Welcome to <span className="font-serif">my Homepage!</span>
-    </h1>
+    <main className="space-y-8">
+      <h1>Alexander Baron</h1>
+      <p>
+        CS Student at <a href="https://rwth-aachen.de/">RWTH Aachen</a> and Student Assistant at the{' '}
+        <a href="https://embedded.rwth-aachen.de/">Chair for Embedded Systems</a>.
+      </p>
+    </main>
   );
 }
