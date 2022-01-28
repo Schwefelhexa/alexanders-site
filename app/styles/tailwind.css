@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply text-lg;
+}
+
 p,
 span,
 a,
@@ -15,9 +19,20 @@ h6 {
 }
 
 h1 {
-  @apply lg:text-8xl font-serif text-6xl font-medium text-gray-800;
+  @apply lg:text-8xl mb-8 font-serif text-6xl font-medium text-gray-800;
+}
+h2 {
+  @apply lg:text-4xl mb-3 font-serif text-3xl font-medium;
+}
+
+p {
+  @apply mb-6;
 }
 
 a {
   @apply hover:text-blue-700 font-medium text-blue-600 underline;
+}
+
+ul {
+  @apply ml-8 list-disc;
 }
